@@ -22,7 +22,7 @@ namespace PythonConnector
         public static API API = new API();
         public static PythonType Vector3 = DynamicHelpers.GetPythonTypeFromType(typeof(GrandTheftMultiplayer.Shared.Math.Vector3));
         public static PythonType Quaternion = DynamicHelpers.GetPythonTypeFromType(typeof(GrandTheftMultiplayer.Shared.Math.Quaternion));
-        public static PythonType Matrix = DynamicHelpers.GetPythonTypeFromType(typeof(GrandTheftMultiplayer.Shared.Math.Matrix4));
+        public static PythonType Matrix4 = DynamicHelpers.GetPythonTypeFromType(typeof(GrandTheftMultiplayer.Shared.Math.Matrix4));
 
         public static PythonType WeaponHash = DynamicHelpers.GetPythonTypeFromType(typeof(WeaponHash));
         public static PythonType VehicleHash = DynamicHelpers.GetPythonTypeFromType(typeof(VehicleHash));
