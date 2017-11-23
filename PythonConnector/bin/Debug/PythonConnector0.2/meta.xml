@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<meta>
-		<info name="PythonConnector" author="katt" version="1.0"/>
-
-		<script src="PythonConnector.dll" type="server" lang="compiled" />
-		<settings>
-				<setting name="pythonstart" value="" default="__init__.py" description="Which file to load" />
-		</settings>
-</meta>
