@@ -584,7 +584,7 @@ namespace PythonConnector
         public void Init()
         {
             API.consoleOutput("Starting \"PythonConnector\" Script!");
-            //ScriptEngine engine = Python.CreateEngine();
+            ScriptEngine engine = Python.CreateEngine();
             string initFilePath = API.getSetting<string>("pythonstart");
 
             var paths = engine.GetSearchPaths();
@@ -593,8 +593,6 @@ namespace PythonConnector
             paths.Add(new FileInfo("resources/PythonConnector/" + initFilePath).Directory.FullName);
             engine.SetSearchPaths(paths);
 
-            //string initFilePath2 = "resources/PythonConnector/index.py";
-            //API.consoleOutput("InitFile2: " + initFilePath2);
             string initFile = File.ReadAllText("resources/PythonConnector/"+initFilePath);
 
             ScriptSource source = engine.CreateScriptSourceFromString(initFile);
